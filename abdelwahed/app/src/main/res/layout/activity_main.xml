@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Java Quiz"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#010101"
+        android:textSize="20dp"/>
+
+    <!--  question 1  -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Q1: Which one of these lists contains only Java programming language keywords?"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="class, if, void, long, Int, continue"
+            android:id="@+id/rep1"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="goto, instanceof, native, finally, default"
+            android:id="@+id/rep2"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="try, virtual, throw, final, volatile, transient"
+            android:id="@+id/rep3"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="strictfp, constant, super, implements, do"
+            android:id="@+id/rep4"/>
+    </RadioGroup>
+
+    <!--  question 2  -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Q2: Which is a reserved word in the Java programming language?"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="methode"
+            android:id="@+id/q2rep1"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="array"
+            android:id="@+id/q2rep2"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="subclasses"
+            android:id="@+id/q2rep3"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="native"
+            android:id="@+id/q2rep4"/>
+    </RadioGroup>
+
+    <!--  question 3 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Q3: Which is a valid keyword in java?"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="interface"
+            android:id="@+id/q3rep1"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="string"
+            android:id="@+id/q3rep2"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Float"
+            android:id="@+id/q3rep3"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="unsigned"
+            android:id="@+id/q3rep4"/>
+    </RadioGroup>
+
+    <!--  question 4  -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Q4: Which is the valid declarations within an interface definition?"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/q4rep1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="public double methoda();" />
+
+        <RadioButton
+            android:id="@+id/q4rep2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="public final double methoda();" />
+
+        <RadioButton
+            android:id="@+id/q4rep3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="static void methoda(double d1);" />
+
+        <RadioButton
+            android:id="@+id/q4rep4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="protected void methoda(double d1);" />
+    </RadioGroup>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#010101"
+        android:id="@+id/result"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:text="check ! "
+        android:textColor="#f10b0b"
+        android:id="@+id/btn"/>
+</LinearLayout>
+</ScrollView>
